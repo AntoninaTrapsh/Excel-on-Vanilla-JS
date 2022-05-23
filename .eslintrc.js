@@ -18,5 +18,6 @@ module.exports = {
         'require-jsdoc': 0,
         'jsdoc/require-jsdoc': 0,
         'indent': ['error', 4],
+        'operator-linebreak': 'off'
     },
 };
