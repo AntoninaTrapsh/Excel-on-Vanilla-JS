@@ -1,3 +1,5 @@
+import {capitalize} from '@core/utils';
+
 export class DomListener {
     constructor($root, listeners = []) {
         if (!$root) {
@@ -8,10 +10,16 @@ export class DomListener {
     }
 
     initDOMListeners() {
-
+        this.listeners.forEach((listener) => {
+            this.$root.on(listener, this[getMethodName(listener)].bind(this));
+        });
     }
 
     removeDOMListeners() {
 
     }
+}
+
+function getMethodName(eventName) {
+    return 'on' + capitalize(eventName);
 }
