@@ -14,7 +14,6 @@ module.exports = {
     'rules': {
         'max-len': ['error', {'code': 80}],
         'comma-dangle': 0,
-        'eol-last': ['error', 'never'],
         'require-jsdoc': 0,
         'jsdoc/require-jsdoc': 0,
         'indent': ['error', 4],

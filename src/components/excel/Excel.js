@@ -12,10 +12,8 @@ export class Excel {
             const $el = $.create('div', Component.className);
             const component = new Component($el);
             $el.html(component.toHTML());
-            console.log($el);
             $root.append($el);
         });
-        console.log($root);
         return $root;
     }
 
