@@ -30,7 +30,7 @@ export function createTable(rowsCount = 15) {
     const colsCount = CODES.Z - CODES.A;
     const rows = [];
 
-    const cols = new Array(colsCount).fill('')
+    const cols = new Array(colsCount).fill('');
 
     rows.push(createRow());
 
