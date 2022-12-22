@@ -9,7 +9,7 @@ module.exports = (env, argv) => {
   const isDev = !isProd;
 
   const fileName = (ext) =>
-    isProd ? `[name].[contenthash].bundle.${ext}` : `[name].bundle.${ext}`;
+        isProd ? `[name].[contenthash].bundle.${ext}` : `[name].bundle.${ext}`;
   const plugins = () => {
     const base = [
       new HtmlWebpackPlugin({
@@ -54,7 +54,7 @@ module.exports = (env, argv) => {
       extensions: ['.js'],
       alias: {
         '@': path.resolve(__dirname, 'src'),
-        // '@core': path.resolve(__dirname, 'src', 'core')
+        '@core': path.resolve(__dirname, 'src', 'core')
       },
     },
     devServer: {
