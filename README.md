@@ -25,3 +25,24 @@
     </tr>
   </tbody>
 </table>
+
+<h1 id="install">Установка</h1>
+
+<ol>
+    <li><p>Клонируем репозиторий в рабочую директорию</p></li>
+    <pre>git clone https://github.com/AntoninaTrapsh/Excel-on-Vanilla-JS.git</pre>
+    <li>
+      В рабочей директории должна появиться папка проекта <code>Excel-on-Vanilla-JS</code>
+    </li>
+    <li>
+      Переходим в данную директорию.
+    </li>
+    <li>
+        <p>Устанавливаем зависимости:</p>
+        <pre>npm install</pre>
+    </li>
+    <li>
+        <p>Запускаем проект:</p>
+        <pre>npm run start</pre>
+    </li>
+</ol>
